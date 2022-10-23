@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
     <title>Document</title>
 </head>
@@ -16,8 +18,9 @@
             <% if(things[i].completed === true) { %>
                 <span class="completed"><%= things[i].todo %></span>
              <% }else{%>
-             <span><%= things[i].todo %></span>
+             <span class="uncompleted"><%= things[i].todo %></span>
             <% } %>
+            <span class='fa fa-trash'></span>
         </li>
             <% } %>
     </section>
@@ -27,6 +30,6 @@
             <button type="submit">submit</button>
         </form>
     </section>
-    
+    <script src="main.js"></script>
 </body>
 </html>
